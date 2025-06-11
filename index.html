@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prise de Rendez-vous</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+    .form-container {
+      background-color: white;
+      padding: 20px;
+      max-width: 500px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, select, textarea, button {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Prendre un Rendez-vous</h2>
+    <form action="#" method="POST">
+      <label for="nom">Nom :</label>
+      <input type="text" id="nom" name="nom" required>
+
+      <label for="prenom">Prénom :</label>
+      <input type="text" id="prenom" name="prenom" required>
+
+      <label for="jour">Jour :</label>
+      <input type="number" id="jour" name="jour" min="1" max="31" required>
+
+      <label for="mois">Mois :</label>
+      <select id="mois" name="mois" required>
+        <option value="">--Choisissez un mois--</option>
+        <option value="1">Janvier</option>
+        <option value="2">Février</option>
+        <option value="3">Mars</option>
+        <option value="4">Avril</option>
+        <option value="5">Mai</option>
+        <option value="6">Juin</option>
+        <option value="7">Juillet</option>
+        <option value="8">Août</option>
+        <option value="9">Septembre</option>
+        <option value="10">Octobre</option>
+        <option value="11">Novembre</option>
+        <option value="12">Décembre</option>
+      </select>
+
+      <label for="annee">Année :</label>
+      <input type="number" id="annee" name="annee" min="2024" max="2100" required>
+
+      <label for="heure">Heure :</label>
+      <input type="time" id="heure" name="heure" required>
+
+      <label for="naissance">Date de naissance :</label>
+      <input type="date" id="naissance" name="naissance" required>
+
+      <label for="debut_activite">Date de début d'activité :</label>
+      <input type="date" id="debut_activite" name="debut_activite" required>
+
+      <label for="jours_travail">Combien de jours travaillez-vous par mois ?</label>
+      <input type="number" id="jours_travail" name="jours_travail" min="1" max="31" required>
+
+      <label for="RCP">Responsabilité civile et professionel :</label>
+      <input type="text" id="RCP" name="RCP" required>
+
+      <label for="PREV">Prevoyance:</label>
+      <input type="text" id="PREV" name="PREV" required>
+
+      <label for="PER">plan épargne retraite :</label>
+      <input type="text" id="PER" name="PER" required>
+
+      <button type="submit">Valider</button>
+    </form>
+  </div>
+</body>
+</html>
